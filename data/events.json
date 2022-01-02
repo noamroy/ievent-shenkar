@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Hai Bar",
+        "location": "Dayan Street, Ashdod",
+        "time": "2021-12-28T12:00:00Z",
+        "description": "Go together to the 'Hai Bar'",
+        "government": "Would you like some tea?",
+        "status": "approved"
+    },
+    {
+        "id": 2,
+        "name": "Safari",
+        "location": "Jerusalem Street, Tel Aviv",
+        "time": "2022-03-25T12:00:00Z",
+        "description": "Go together to the Safari",
+        "government": "Would you like some coffee?",
+        "status": "wait"
+    }
+]

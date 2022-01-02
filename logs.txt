@@ -1,0 +1,213 @@
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 2
+info: EVENT CONTROLLER RES: get event data number: 2
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: Didn't find event number: 3
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: Didn't find event number: 3
+info: EVENT CONTROLLER REQ: Get specific event number 2
+info: EVENT CONTROLLER RES: get event data number: 2
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: Input error!
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: Input error!
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: Input error!
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 3
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: update an event number: 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 5
+info: EVENT CONTROLLER RES: delete event number: 5
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: delete event number: 4
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:new useretos
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:new useretos
+info: Login SYSTEM CONTROLLER ERROR: Failed login attempt
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:Noam
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:Noam
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: REGISTER SYSTEM CONTROLLER REQ: POST add a new user
+info: REGISTER SYSTEM CONTROLLER REQ: POST add a new user
+info: REGISTER SYSTEM CONTROLLER ERROR: no Valid
+info: REGISTER SYSTEM CONTROLLER REQ: POST add a new user
+info: REGISTER SYSTEM CONTROLLER ERROR: no Valid
+info: REGISTER SYSTEM CONTROLLER REQ: POST add a new user
+info: REGISTER SYSTEM CONTROLLER RES: User added id: New Useros
+info: REGISTER SYSTEM CONTROLLER REQ: POST add a new user
+info: REGISTER SYSTEM CONTROLLER RES: User added id: New Useros
+info: REGISTER SYSTEM CONTROLLER REQ: POST add a new user
+info: REGISTER SYSTEM CONTROLLER RES: User added id: New Useros
+info: USER CONTROLLER REQ: check validity
+info: USER CONTROLLER REQ: check validity
+info: USER CONTROLLER RES: Didn't find user number: 3
+info: USER CONTROLLER REQ: check validity
+info: USER CONTROLLER REQ: check validity
+info: USER CONTROLLER RES: 2 is not Valid
+info: CONNECTION CONTROLLER REQ: POST add an connection
+info: CONNECTION CONTROLLER REQ: POST add an connection
+info: CONNECTION CONTROLLER RES: add connection
+info: CONNECTION CONTROLLER REQ: POST add an connection
+info: CONNECTION CONTROLLER RES: add connection
+info: CONNECTION CONTROLLER REQ: Get events for user: user/2
+info: CONNECTION CONTROLLER REQ: Get events for user: 2
+info: CONNECTION CONTROLLER RES: Get all events for user: 2
+info: CONNECTION CONTROLLER REQ: Get events for user: 1
+info: CONNECTION CONTROLLER RES: Get all events for user: 1
+info: CONNECTION CONTROLLER REQ: Get events for user: 0
+info: CONNECTION CONTROLLER REQ: Get events for user: 3
+info: CONNECTION CONTROLLER REQ: Get events for user: 2
+info: CONNECTION CONTROLLER RES: Get all events for user: 2
+info: CONNECTION CONTROLLER REQ: DELETE
+info: CONNECTION CONTROLLER REQ: DELETE
+info: CONNECTION CONTROLLER REQ: DELETE
+info: CONNECTION CONTROLLER REQ: DELETE
+info: CONNECTION CONTROLLER REQ: DELETE
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: get event data number: 3
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: get event data number: 3
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: get event data number: 3
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: get event data number: 3
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: get event data number: 3
+info: EVENT CONTROLLER REQ: update an event number: 3
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: get event data number: 4
+info: EVENT CONTROLLER REQ: Get specific event number 4
+info: EVENT CONTROLLER RES: delete event number: 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events

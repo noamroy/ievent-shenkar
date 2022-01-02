@@ -1,0 +1,29 @@
+{
+  "name": "ievent",
+  "version": "1.0.0",
+  "description": "Ievent application",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noamroy/IEvent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noamroy/IEvent/issues"
+  },
+  "homepage": "https://github.com/noamroy/IEvent#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.4",
+    "winston": "^3.3.3"
+  }
+}
