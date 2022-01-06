@@ -1,6 +1,7 @@
 //~~~~~~~~~INCLUDES~~~~~~~~~~~~
 const User = require('../models/user');
 const Log = require('./logger');
+const jwt = require('jsonwebtoken')
 //~~~~~~~EXPORTED FUNCTIONS~~~~~~~~~~
 /*
 POST REQUEST: loginUser() (body = name and pass params)
@@ -22,14 +23,11 @@ exports.userController = {
             if (userDataResponse.length != 0) {
                 const userData = userDataResponse[0];
                 if (userPassword == userData.password) {
-                    User.updateOne({ id: userData.id }, {
-                        time: (new Date())+1000*60*30})
-                        .catch(err => {
-                            Log.logger.info(`USER CONTROLLER ERROR: update user time ${err}`);
-                            res.status(500).json({status: 500 , msg: `Error update user time`});
-                    });
-                    Log.logger.info(`Login SYSTEM CONTROLLER RES: Succesfull login: ${userData.name}`);
-                    res.status(200).json({ "status": 200, "msg": `Succesfull login: ${userData.name}` });
+                    jwt.sign({userData}, 'privatekey', { expiresIn: '30m'},(err, token) => {
+                        if (err) {Log.logger(err) }
+                        Log.logger.info(`Login SYSTEM CONTROLLER RES: Succesfull login: ${userData.name}`);
+                        res.status(200).json({ "status": 200, "msg": `Succesfull login: ${userData.name}`, "token":token});        
+                    });                    
                 } else {
                     Log.logger.info(`Login SYSTEM CONTROLLER ERROR: Failed login attempt: ${userData.id}`);
                     res.status(401).json({ "status": 401, "msg": `Incorrect password` });
@@ -78,35 +76,5 @@ exports.userController = {
             res.status(401).json({ "status": 401, "msg": `Please enter valid data` });
         }
 
-    },
-    async getValidity(req, res) {
-        Log.logger.info(`USER CONTROLLER REQ: check validity`);
-        const body = req.body;
-        if (body.id) {
-            const userDataResponse = await User.find({ id: body.id })
-                .catch(err => {
-                    Log.logger.info(`User CONTROLLER ERROR: Database retriving error ${err}`);
-                    res.status(503).json({ "status": 503, "msg": `Database retriving error ${err}` });
-                    return;
-                });
-            if (userDataResponse.length == 0){
-                Log.logger.info(`USER CONTROLLER RES: Didn't find user number: ${body.id}`);
-                res.status(404).json({status: 404 , msg: `Didn't find user number: "${body.id}"`});
-            }
-            else{
-                userData=userDataResponse[0];
-                if (body.time > (new Date())){
-                    Log.logger.info(`USER CONTROLLER RES: ${body.id} is Valid`);
-                    res.status(200).json({"status": 200, "valid": "yes"});
-                }
-                else{
-                    Log.logger.info(`USER CONTROLLER RES: ${body.id} is not Valid`);
-                    res.status(200).json({"status": 200, "valid": "no"});
-                }              
-            }
-        } else {
-            Log.logger.info(`USER CONTROLLER RES: data in body not valid`);
-            res.status(401).json({ "status": 401, "msg": `Please enter valid data` });
-        }
     }
 };

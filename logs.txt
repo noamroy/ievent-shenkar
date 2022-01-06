@@ -211,3 +211,30 @@ info: EVENT CONTROLLER REQ: Get specific event number 4
 info: EVENT CONTROLLER RES: delete event number: 4
 info: EVENT CONTROLLER REQ: Get all events
 info: EVENT CONTROLLER RES: Get all events
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:Noam
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:Noam
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: AUTHORIZED ERROR: could not connect to the protected route
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: AUTHORIZED ERROR: could not connect to the protected route
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:Noam
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: AUTHORIZED ERROR: could not connect to the protected route
+info: AUTHORIZED ERROR: could not connect to the protected route
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:Noam
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get specific event number 3
+info: EVENT CONTROLLER RES: get event data number: 3

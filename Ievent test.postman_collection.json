@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "066a2213-257c-429f-a553-b8864ae44131",
+		"name": "Ievent test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "show all events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/event/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"event",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get event number 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/event/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"event",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add event",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"new eventos\",\r\n    \"location\": \"Tel Aviv University, Tel Aviv, Israel\",\r\n    \"time\": \"2022-03-02T12:00:00.000Z\",\r\n    \"description\": \"Go together to the new event\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/event/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"event",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update event number 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"update eventos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/event/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"event",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete event number 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/event/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"event",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/event/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"event",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Noam\",\r\n    \"password\": \"Noam\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"New Useros\",\r\n    \"password\": \"Useros\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/user/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Connections",
+			"item": [
+				{
+					"name": "Add connections",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"1\",\r\n    \"eventId\": \"4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/connection",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"connection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get events for user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/connection/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"connection",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users for event",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/connection/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"connection",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete connection",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJfaWQiOiI2MWNkOTQwZDY4NmE0NDEyMmYxZWM3OTgiLCJpZCI6MSwibmFtZSI6Ik5vYW0iLCJwYXNzd29yZCI6Ik5vYW0iLCJ0aW1lIjoiMjAyMS0xMi0zMFQxNToyODo0Ni4wMDBaIn0sImlhdCI6MTY0MTQ3ODI5MCwiZXhwIjoxNjQxNDgwMDkwfQ.NGQgvnaFSbs7CXxZxPl4-nxkJJ4PcD7x8Fn8ArS2Cws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\" : 1,\r\n    \"eventId\" : 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/connection/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"connection",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
