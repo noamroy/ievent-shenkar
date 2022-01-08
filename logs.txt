@@ -1,4 +1,0 @@
-info: LOGIN SYSTEM CONTROLLER REQ: Login Name:misha
-info: Login SYSTEM CONTROLLER RES: Succesfull login: misha
-info: EVENT CONTROLLER REQ: Get all events
-info: EVENT CONTROLLER RES: Get all events
