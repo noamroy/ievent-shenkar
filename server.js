@@ -1,5 +1,6 @@
 const express = require("express");
 const jwt = require('jsonwebtoken');
+const cors = require('cors')
 const app = express();
 const port = process.env.PORT || 8080;
 
@@ -12,6 +13,8 @@ app.use((req, res, next) => {
     res.set('Content-Type', 'application/json');
     next();
 });
+app.use(cors())
+
 const { usersRouter } = require("./routers/usersRouter");
 app.use('/api/user', usersRouter);
 app.use((req, res, next) => {
