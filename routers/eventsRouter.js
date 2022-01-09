@@ -5,6 +5,7 @@ module.exports = { eventsRouter };
 
 eventsRouter.get('/', eventController.getAllEvents); // {host}/api/event
 eventsRouter.get('/:id', eventController.getSpecificEvent); // {host}/api/event/:id
+eventsRouter.get('/waiting/events', eventController.getWaitingEvents); // {host}/api/event/waiting/events
 eventsRouter.post('/', eventController.createEvent); // {host}/api/event
 eventsRouter.put('/:id', eventController.updateEvent); // {host}/api/event/:id
 eventsRouter.delete('/:id', eventController.deleteEvent); // {host}/api/event/:id

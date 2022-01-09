@@ -6,7 +6,9 @@ const eventSchema = new Schema({
     time: {type : Date, required: true },
     description: {type : String},
     government: {type : String},
+    numberofparticipants: {type:Number},
     status: {type : String, required: true },
+    creator: {type: String , required: true}
 }, { collection: 'events' });
 const Event = model('event', eventSchema);
 module.exports = Event;

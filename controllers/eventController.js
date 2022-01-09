@@ -1,5 +1,6 @@
 //~~~~~~~~~INCLUDES~~~~~~~~~~~~
 const Event = require('../models/event');
+const User = require('../models/user')
 const Log = require('./logger');
 //~~~~~~~EXPORTED FUNCTIONS~~~~~~~~~~
 /*
@@ -21,6 +22,32 @@ exports.eventController = {
         if (answer.length!=0){
             Log.logger.info(`EVENT CONTROLLER RES: Get all events`);
             res.json(answer);
+        }
+        else{
+            Log.logger.info(`EVENT CONTROLLER RES: no events in DB`);
+            res.status(404).json({status: 404 , msg: `No events in DB`});
+        }
+    },
+    async getWaitingEvents(req, res) {
+        Log.logger.info(`EVENT CONTROLLER REQ: Get all waiting events`);
+        const answer = await Event.find({status:"waiting for approval"})
+            .catch(err => {
+                Log.logger.info(`EVENT CONTROLLER ERROR: getting the data from db ${err}`);
+                res.status(500).json({status: 500 , msg: `Server error`});
+            });
+        if (answer.length!=0){
+            var resList = []
+            for (var i = 0; i < answer.length; i++) {
+                const creatorDataWithPass = await User.find({id:answer[i].creator})
+                const creatorData = creatorDataWithPass[0]
+                delete creatorData.password
+                const newElement = {
+                    ...answer[i]._doc,
+                    creatorData: creatorData
+                }
+                resList.push(newElement)
+            }
+            res.json(resList);
         }
         else{
             Log.logger.info(`EVENT CONTROLLER RES: no events in DB`);
@@ -64,13 +91,6 @@ exports.eventController = {
             eventId = eventId[(eventId.length)-1].id+1;
         else
             eventId=1;
-        console.log(`id: ${eventId}`);
-        console.log(`name: ${body.name}`);
-        console.log(`location: ${body.location}`);
-        console.log(`time: ${body.time}`);
-        console.log(`description: ${body.description}`);
-        console.log(`government: ${body.government}`);
-        console.log(`status: wait for approval`);
         if (body.name && body.location && body.time){
             const newEvent = new Event({
                 "id": eventId,
@@ -78,8 +98,10 @@ exports.eventController = {
                 "location": body.location,
                 "time": body.time,
                 "description": body.description,
+                "numberofparticipants":body.numberofparticipants,
                 "government": body.government,
-                "status": "wait for approval"
+                "status": "waiting for approval",
+                "creator": body.creator
             });
             const result = newEvent.save();
             if (result) {

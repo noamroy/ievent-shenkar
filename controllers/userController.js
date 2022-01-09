@@ -10,11 +10,11 @@ GET REQUEST: getValidity() (body = name)
 */
 exports.userController = {
     async loginUser(req, res) {
-        const userName = req.body.name;
+        const userName = req.body.email;
         const userPassword = req.body.password;
         Log.logger.info(`LOGIN SYSTEM CONTROLLER REQ: Login Name:${userName}`);
         if (userName && userPassword) {
-            const userDataResponse = await User.find({ name: userName })
+            const userDataResponse = await User.find({ email: userName })
                 .catch(err => {
                     Log.logger.info(`LOGIN SYSTEM CONTROLLER ERROR: Database retriving error ${err}`);
                     res.status(503).json({ "status": 503, "msg": `Database retriving error ${err}` });
@@ -26,7 +26,7 @@ exports.userController = {
                     jwt.sign({userData}, 'privatekey', { expiresIn: '30m'},(err, token) => {
                         if (err) {Log.logger(err) }
                         Log.logger.info(`Login SYSTEM CONTROLLER RES: Succesfull login: ${userData.name}`);
-                        res.status(200).json({ "status": 200, "msg": `Succesfull login: ${userData.name}`, "token":token});        
+                        res.status(200).json({ "status": 200, "msg": `Succesfull login: ${userData.name}`,"type":`${userData.type}`,"id":`${userData.id}`,"name": `${userData.name}`, "token":token});        
                     });                    
                 } else {
                     Log.logger.info(`Login SYSTEM CONTROLLER ERROR: Failed login attempt: ${userData.id}`);
@@ -46,7 +46,7 @@ exports.userController = {
         const body = req.body;
         console.log(body);
         var userId = 0;
-        if (body.name && body.password) {
+        if (body.name && body.password && body.email && body.phone) {
             const userDataResponse = await User.find()
                 .catch(err => {
                     Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Database retriving error`);
@@ -62,6 +62,9 @@ exports.userController = {
                     id: userId,
                     name: body.name,
                     password: body.password,
+                    email: body.email,
+                    phone: body.phone,
+                    type: "USER",
                     time: "2021-12-28T12:00:00Z"
                 });
                 const result = newUser.save();

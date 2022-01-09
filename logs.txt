@@ -1,0 +1,46 @@
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 3
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:mishasoni@gmail.com
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Michael
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
+info: EVENT CONTROLLER REQ: Get all waiting events
