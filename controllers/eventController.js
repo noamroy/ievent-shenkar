@@ -98,7 +98,7 @@ exports.eventController = {
                 "location": body.location,
                 "time": body.time,
                 "description": body.description,
-                "numberofparticipants":body.numberofparticipants,
+                "numberofparticipants": body.numberofparticipants,
                 "government": body.government,
                 "status": "waiting for approval",
                 "creator": body.creator
@@ -148,13 +148,16 @@ exports.eventController = {
                     event.government=body.government;
                 if (body.status)
                     event.status=body.status;
+                if (body.numberofparticipants)
+                    event.numberofparticipants=body.numberofparticipants;
                 Event.updateOne({ id: eventId }, {
                     name: event.name,
                     location: event.location,
                     time: event.time,
                     description: event.description,
                     government: event.government,
-                    status: event.status})
+                    status: event.status,
+                    numberofparticipants: event.numberofparticipants})
                     .catch(err => {
                         Log.logger.info(`EVENT CONTROLLER ERROR: update event ${err}`);
                         res.status(500).json({status: 500 , msg: `Error update a event`});

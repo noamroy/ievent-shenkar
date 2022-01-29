@@ -46,7 +46,40 @@ exports.userController = {
         const body = req.body;
         console.log(body);
         var userId = 0;
-        if (body.name && body.password && body.email && body.phone) {
+        if (body.name && body.password && body.email && body.phone && body.type) {
+            const name_duplicate = await User.find({name: body.name})
+                .catch(err => {
+                    Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Database retriving error`);
+                    res.status(503).json({ "status": 503, "msg": `Database retriving error` });
+                    return;
+                });
+            if (name_duplicate.length!=0){
+                Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Name already exists`);
+                res.status(400).json({ "status": 400, "msg": `Name already exists` });
+                return;
+            }
+            const email_duplicate = await User.find({email: body.email})
+                .catch(err => {
+                    Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Database retriving error`);
+                    res.status(503).json({ "status": 503, "msg": `Database retriving error` });
+                    return;
+                });
+            if (email_duplicate.length!=0){
+                Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Email already exists`);
+                res.status(400).json({ "status": 400, "msg": `Email already exists` });
+                return;
+            }
+            const phone_duplicate = await User.find({phone: Number(body.phone)})
+                .catch(err => {
+                    Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Database retriving error`);
+                    res.status(503).json({ "status": 503, "msg": `Database retriving error` });
+                    return;
+                });
+            if (phone_duplicate.length!=0){
+                Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Phone already exists`);
+                res.status(400).json({ "status": 400, "msg": `Phone already exists` });
+                return;
+            }
             const userDataResponse = await User.find()
                 .catch(err => {
                     Log.logger.info(`REGISTER SYSTEM CONTROLLER ERROR: Database retriving error`);
@@ -64,8 +97,7 @@ exports.userController = {
                     password: body.password,
                     email: body.email,
                     phone: body.phone,
-                    type: "USER",
-                    time: "2021-12-28T12:00:00Z"
+                    type: body.type,
                 });
                 const result = newUser.save();
                 Log.logger.info(`REGISTER SYSTEM CONTROLLER RES: User added id: ${body.name}`);
