@@ -9,11 +9,40 @@ GET REQUEST: getSpecificEvent(path = '/id')
 POST REQUEST: createEvent(body = all params except for id)
 PUT REQUEST: updateEvent(path = '/id', body = all new params)
 DELETE REQUEST: deleteEvent(path = '/id')
-PATCH REQUEST: updateStatus()
 */
+async function updateStatus(){
+    Log.logger.info(`EVENT CONTROLLER REQ: Update events status`);
+    const answer = await Event.find()
+        .catch(err => {
+            Log.logger.info(`EVENT CONTROLLER ERROR: getting the data from db ${err}`);
+        });
+    for (let index = 0; index < answer.length; index++) {
+        const element = answer[index];
+        const eventTime = element.time;
+        if (eventTime+(1000*60*60*10)<new Date()){
+            Event.deleteOne ({ id: element.id})
+            .catch(err => {
+                Log.logger.info(`EVENT CONTROLLER ERROR: deleting event from db: ${err}`);
+            });
+            Log.logger.info(`EVENT CONTROLLER SUCCESS: deleting event from db: ${element.id}`);
+        }
+        /*
+        else if (eventTime-(1000*60*60*2)<new Date()){
+            if (eventstatus == "approved")
+            Event.updateOne({ id: element.id }, {
+                status: "now"})
+                .catch(err => {
+                    Log.logger.info(`EVENT CONTROLLER ERROR: update event status ${err}`);
+                    res.status(500).json({status: 500 , msg: `Error update a event status`});
+            });
+        }*/ //not needed
+    }
+    Log.logger.info(`EVENT CONTROLLER RES: update all events status`);
+}
 exports.eventController = {
     async getAllEvents(req, res) {
         Log.logger.info(`EVENT CONTROLLER REQ: Get all events`);
+        await updateStatus();
         const answer = await Event.find()
             .catch(err => {
                 Log.logger.info(`EVENT CONTROLLER ERROR: getting the data from db ${err}`);
@@ -22,32 +51,6 @@ exports.eventController = {
         if (answer.length!=0){
             Log.logger.info(`EVENT CONTROLLER RES: Get all events`);
             res.json(answer);
-        }
-        else{
-            Log.logger.info(`EVENT CONTROLLER RES: no events in DB`);
-            res.status(404).json({status: 404 , msg: `No events in DB`});
-        }
-    },
-    async getWaitingEvents(req, res) {
-        Log.logger.info(`EVENT CONTROLLER REQ: Get all waiting events`);
-        const answer = await Event.find({status:"waiting for approval"})
-            .catch(err => {
-                Log.logger.info(`EVENT CONTROLLER ERROR: getting the data from db ${err}`);
-                res.status(500).json({status: 500 , msg: `Server error`});
-            });
-        if (answer.length!=0){
-            var resList = []
-            for (var i = 0; i < answer.length; i++) {
-                const creatorDataWithPass = await User.find({id:answer[i].creator})
-                const creatorData = creatorDataWithPass[0]
-                delete creatorData.password
-                const newElement = {
-                    ...answer[i]._doc,
-                    creatorData: creatorData
-                }
-                resList.push(newElement)
-            }
-            res.json(resList);
         }
         else{
             Log.logger.info(`EVENT CONTROLLER RES: no events in DB`);
@@ -182,37 +185,5 @@ exports.eventController = {
                     res.status(500).json({status: 500 , msg: `Server delete error`});
                 });
         }
-    },
-    async updateStatus(req, res){
-        Log.logger.info(`EVENT CONTROLLER REQ: Update events status`);
-        const answer = await Event.find()
-            .catch(err => {
-                Log.logger.info(`EVENT CONTROLLER ERROR: getting the data from db ${err}`);
-                res.status(500).json({status: 500 , msg: `Server error`});
-            });
-        for (let index = 0; index < answer.length; index++) {
-            const element = answer[index];
-            const eventTime = element.time;
-            const eventstatus = element.status;
-            if (eventTime+(1000*60*60*10)<new Date()){
-                Event.updateOne({ id: element.id }, {
-                    status: "passed"})
-                    .catch(err => {
-                        Log.logger.info(`EVENT CONTROLLER ERROR: update event status ${err}`);
-                        res.status(500).json({status: 500 , msg: `Error update a event status`});
-                });
-            }
-            else if (eventTime-(1000*60*60*2)<new Date()){
-                if (eventstatus == "approved")
-                Event.updateOne({ id: element.id }, {
-                    status: "now"})
-                    .catch(err => {
-                        Log.logger.info(`EVENT CONTROLLER ERROR: update event status ${err}`);
-                        res.status(500).json({status: 500 , msg: `Error update a event status`});
-                });
-            }
-        }
-        Log.logger.info(`EVENT CONTROLLER RES: update all events status`);
-        res.json({status: 200 , msg: `update all events status`});
     }
 };
