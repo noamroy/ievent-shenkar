@@ -1,6 +1,5 @@
 //~~~~~~~~~INCLUDES~~~~~~~~~~~~
 const Event = require('../models/event');
-const User = require('../models/user')
 const Log = require('./logger');
 //~~~~~~~EXPORTED FUNCTIONS~~~~~~~~~~
 /*
@@ -20,22 +19,12 @@ async function updateStatus(){
         const element = answer[index];
         const eventTime = element.time;
         if (eventTime+(1000*60*60*10)<new Date()){
-            Event.deleteOne ({ id: element.id})
+            await Event.deleteOne ({ id: element.id})
             .catch(err => {
                 Log.logger.info(`EVENT CONTROLLER ERROR: deleting event from db: ${err}`);
             });
             Log.logger.info(`EVENT CONTROLLER SUCCESS: deleting event from db: ${element.id}`);
         }
-        /*
-        else if (eventTime-(1000*60*60*2)<new Date()){
-            if (eventstatus == "approved")
-            Event.updateOne({ id: element.id }, {
-                status: "now"})
-                .catch(err => {
-                    Log.logger.info(`EVENT CONTROLLER ERROR: update event status ${err}`);
-                    res.status(500).json({status: 500 , msg: `Error update a event status`});
-            });
-        }*/ //not needed
     }
     Log.logger.info(`EVENT CONTROLLER RES: update all events status`);
 }
