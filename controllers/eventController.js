@@ -18,7 +18,7 @@ async function updateStatus(){
     for (let index = 0; index < answer.length; index++) {
         const element = answer[index];
         const eventTime = element.time;
-        if ((new Date(eventTime)).getDay()<(new Date()).getDay()){
+        if ((new Date(eventTime)).getTime()+1000*60*60*10<(new Date()).getTime()){
             await Event.deleteOne ({ id: element.id})
             .catch(err => {
                 Log.logger.info(`EVENT CONTROLLER ERROR: deleting event from db: ${err}`);

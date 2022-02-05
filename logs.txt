@@ -786,3 +786,284 @@ info: EVENT CONTROLLER REQ: Get specific event number 6
 info: EVENT CONTROLLER RES: get event data number: 6
 info: EVENT CONTROLLER REQ: Get specific event number 6
 info: EVENT CONTROLLER RES: get event data number: 6
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:noamroy2@gmail.com
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: no events in DB
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 1
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 14:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get day= 1
+info: now day is= 6
+info: delete? true
+info: EVENT CONTROLLER SUCCESS: deleting event from db: 1
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: no events in DB
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: no events in DB
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: no events in DB
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: no events in DB
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:noamroy2@gmail.com
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: no events in DB
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 1
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:41:00 GMT+0200 (שעון ישראל (חורף))
+info: LOGIN SYSTEM CONTROLLER REQ: Login Name:noamroy2@gmail.com
+info: Login SYSTEM CONTROLLER RES: Succesfull login: Noam
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:41:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266460000
+info: now time is= 1644093800293
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 2
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:41:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266460000
+info: now time is= 1644093817214
+info: delete? false
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644093817216
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:41:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266460000
+info: now time is= 1644093829780
+info: delete? false
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644093829787
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 1
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:41:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266460000
+info: now time is= 1644093915214
+info: delete? false
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644093915215
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 1
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: EVENT CONTROLLER REQ: Get specific event number 1
+info: EVENT CONTROLLER RES: get event data number: 1
+info: EVENT CONTROLLER REQ: Get specific event number 1
+info: EVENT CONTROLLER RES: delete event number: 1
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644093918492
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644093919818
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 3
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644094007768
+info: delete? false
+info: EVENT CONTROLLER: time now is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is= 1644094007772
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644094008975
+info: delete? false
+info: EVENT CONTROLLER: time now is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is= 1644094008977
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 3
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644094032132
+info: delete? false
+info: EVENT CONTROLLER: time now is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is= 1644094032136
+info: delete? false
+info: EVENT CONTROLLER: time now is: Sat Feb 05 2022 22:46:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644093960000
+info: now time is= 1644094032140
+info: delete? true
+info: EVENT CONTROLLER SUCCESS: deleting event from db: 4
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time now is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is= 1644094033593
+info: delete? false
+info: EVENT CONTROLLER: time now is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is= 1644094033597
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 3
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 4
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time event is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is: Sat Feb 05 2022 22:50:10 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094210550
+info: delete? false
+info: EVENT CONTROLLER: time event is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is: Sat Feb 05 2022 22:50:10 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094210554
+info: delete? false
+info: EVENT CONTROLLER: time event is: Sat Feb 05 2022 22:44:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644093840000
+info: now time is: Sat Feb 05 2022 22:50:10 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094210556
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time event is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is: Sat Feb 05 2022 22:50:12 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094212103
+info: delete? false
+info: EVENT CONTROLLER: time event is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is: Sat Feb 05 2022 22:50:12 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094212105
+info: delete? false
+info: EVENT CONTROLLER: time event is: Sat Feb 05 2022 22:44:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644093840000
+info: now time is: Sat Feb 05 2022 22:50:12 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094212109
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 3
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 4
+info: EVENT CONTROLLER REQ: POST add an event
+info: EVENT CONTROLLER RES: add event number 5
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time event is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is: Sat Feb 05 2022 22:51:39 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094299591
+info: delete? false
+info: EVENT CONTROLLER: time event is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is: Sat Feb 05 2022 22:51:39 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094299592
+info: delete? false
+info: EVENT CONTROLLER: time event is: Sat Feb 05 2022 22:44:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644093840000
+info: now time is: Sat Feb 05 2022 22:51:39 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094299594
+info: delete? false
+info: EVENT CONTROLLER: time event is: Wed Feb 02 2022 22:51:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1643835060000
+info: now time is: Sat Feb 05 2022 22:51:39 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094299595
+info: delete? true
+info: EVENT CONTROLLER SUCCESS: deleting event from db: 5
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: EVENT CONTROLLER REQ: Get all events
+info: EVENT CONTROLLER REQ: Update events status
+info: EVENT CONTROLLER: time event is: Mon Feb 07 2022 22:43:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644266580000
+info: now time is: Sat Feb 05 2022 22:51:42 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094302395
+info: delete? false
+info: EVENT CONTROLLER: time event is: Fri Feb 18 2022 09:00:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1645167600000
+info: now time is: Sat Feb 05 2022 22:51:42 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094302396
+info: delete? false
+info: EVENT CONTROLLER: time event is: Sat Feb 05 2022 22:44:00 GMT+0200 (שעון ישראל (חורף))
+info: get time= 1644093840000
+info: now time is: Sat Feb 05 2022 22:51:42 GMT+0200 (שעון ישראל (חורף))
+info: now time is= 1644094302397
+info: delete? false
+info: EVENT CONTROLLER RES: update all events status
+info: EVENT CONTROLLER RES: Get all events
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER REQ: POST is exist?
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 2
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 3
+info: CONNECTION CONTROLLER RES: no connection between user 12 to event 4
